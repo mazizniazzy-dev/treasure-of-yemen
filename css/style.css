@@ -428,6 +428,7 @@ height:72px;
 ========================================*/
 
 .hero {
+    padding-top: 130px;
     position: relative;
     height: 100vh;
     width: 100%; /* Ensures the container spans the full width from left to right */
@@ -2105,4 +2106,24 @@ body.shop-page .featured-products {
 .parallax-element {
     will-change: transform; /* Optimizes performance for animations */
     transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1);
+}
+
+/* Prevent horizontal scrolling/overflow and fix white background flashes */
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #2F2118; /* Matches your dark brand background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure all containers respect screen boundaries on mobile */
+* {
+    box-sizing: border-box;
+}
+
+.hero, .hero-content, section {
+    width: 100%;
+    max-width: 100%;
 }
