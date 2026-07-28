@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Liter Jar | Treasure of Yemen</title>
+    <link rel="icon" href="images/favicontreasureofyemen.png">
+    
+    <!-- Google Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- All CSS centralized here -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="shop-page">
+
+<!-- Navbar -->
+<nav id="navbar">
+    <a href="index.html" class="logo">
+        <img src="images/treasureofyemen1.png" alt="Treasure of Yemen">
+    </a>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="index.html#about">About</a></li>
+    </ul>
+    <a href="index.html#contact" class="shop-btn">Contact Us</a>
+    <div class="menu-toggle">
+        <span></span><span></span><span></span>
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#contact" class="mobile-shop-btn">Contact Us</a>
+</div>
+
+<!-- Single Product Section -->
+<section class="single-product">
+    <!-- Added fade-up-element for animation -->
+    <div class="product-detail-container fade-up-element">
+        <!-- Left Side: Large Image -->
+        <div class="product-detail-image">
+            <img src="images/5literhoney.png" alt="5 Liter Jar">
+        </div>
+        
+        <!-- Right Side: Details & Action -->
+        <div class="product-detail-info">
+            <p class="breadcrumbs"><a href="shop.html">Shop</a> / 5 Liter Bottle</p>
+            <h1>5 Liter Bottle</h1>
+            <p class="price">$1,000</p>
+            
+            <div class="description">
+                <p>Perfect for families, events, or stocking up on premium honey.</p>
+                <p>Experience the authentic taste of premium honey harvested from the ancient mountains of Yemen. This 100% pure, raw honey is perfect for those who want the finest quality in abundance.</p>
+            </div>
+
+            <!-- Removed Cart, Added Stripe Link -->
+            <div class="purchase-actions">
+                <a href="YOUR_STRIPE_LINK_HERE" class="primary-btn">Buy Now</a>
+            </div>
+            
+            <div class="product-features">
+                <p><i class="fa-solid fa-droplet"></i> 100% Pure & Raw</p>
+                <p><i class="fa-solid fa-leaf"></i> No Additives</p>
+                <p><i class="fa-solid fa-mountain"></i> Imported from Yemen</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <img src="images/treasureofyemen1.png" alt="Treasure of Yemen Logo" class="footer-logo">
+            <p>Experience the authentic taste of premium honey harvested from the ancient mountains of Yemen.</p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="footer-legal">
+            <h3>Legal</h3>
+            <a href="#" id="privacyLink">Privacy Policy</a>
+            <a href="#" id="termsLink">Terms of Service</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Treasure of Yemen. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- ================= LEGAL POPUPS ================= -->
+<div class="success-popup legal-popup" id="privacyPopup">
+    <div class="popup-box legal-box">
+        <h3>Privacy Policy</h3>
+        <div class="legal-text">
+            <p><strong>1. Information Collection:</strong> We collect information you provide directly to us, such as when you create an account, subscribe to our newsletter, or make a purchase. This includes your name, email, phone number, and shipping address.</p>
+            <p><strong>2. Use of Data:</strong> Your data is used exclusively to process orders, deliver your premium honey, and communicate updates or exclusive offers related to Treasure of Yemen.</p>
+            <p><strong>3. Data Protection:</strong> We implement industry-standard security measures to protect your personal information from unauthorized access, alteration, or disclosure. We do not sell your personal data to third parties.</p>
+        </div>
+        <button class="close-legal-btn">Close</button>
+    </div>
+</div>
+
+<div class="success-popup legal-popup" id="termsPopup">
+    <div class="popup-box legal-box">
+        <h3>Terms of Service</h3>
+        <div class="legal-text">
+            <p><strong>1. Product Authenticity:</strong> Treasure of Yemen guarantees that all our honey is 100% pure and raw, imported directly from Yemen without additives or blending.</p>
+            <p><strong>2. Shipping & Returns:</strong> Orders are processed within 1-2 business days. Due to the consumable nature of our products, returns are only accepted for sealed, unopened jars within 14 days of delivery.</p>
+            <p><strong>3. Medical Disclaimer:</strong> Our products are intended for culinary and general wellness purposes. They are not intended to diagnose, treat, cure, or prevent any disease. Do not feed raw honey to infants under one year of age.</p>
+        </div>
+        <button class="close-legal-btn">Close</button>
+    </div>
+</div>
+
+<!-- All JS centralized here -->
+<script src="js/app.js"></script>
+</body>
+</html>
