@@ -51,19 +51,37 @@
         </div>
         
         <!-- Right Side: Details & Action -->
+        <!-- Right Side: Details & Action -->
         <div class="product-detail-info">
             <p class="breadcrumbs"><a href="shop.html">Shop</a> / 8 ounce Jar</p>
-            <h1>8 oz Jar</h1>
-            <p class="price">$35</p>
+            
+            <h1 style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
+                8 oz Jar 
+                <span style="background: #e69c24; color: white; font-size: 1rem; padding: 4px 12px; border-radius: 6px; text-transform: uppercase; letter-spacing: 1px; font-family: 'Poppins', sans-serif;">Limited Time Deal</span>
+            </h1>
+            
+            <!-- Deal Pricing Block -->
+            <div class="sale-pricing" style="margin-bottom: 25px; padding: 15px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
+                <p style="color: #555; font-size: 1.1rem; margin-bottom: 5px;">
+                    List Price: <span style="text-decoration: line-through;">$50.00</span>
+                </p>
+                <p class="price" style="font-size: 2.5rem; margin-bottom: 5px; color: #b12704;">
+                    <span style="font-size: 1.2rem; vertical-align: top; margin-top: 8px; display: inline-block;">$</span>35<span style="font-size: 1.2rem; vertical-align: top; margin-top: 8px; display: inline-block;">00</span>
+                </p>
+                <p style="color: #555; font-size: 1.1rem; margin-bottom: 0;">
+                    You Save: <span style="color: #b12704;">$15.00 (30%)</span>
+                </p>
+            </div>
             
             <div class="description">
                 <p>Ideal for trying our honey or enjoying it in smaller portions.</p>
                 <p>Experience the authentic taste of premium honey harvested from the ancient mountains of Yemen. This 100% pure, raw honey is perfect for those who want the finest quality in abundance.</p>
             </div>
 
-            <!-- Removed Cart, Added Stripe Link -->
             <div class="purchase-actions">
-                <a href="https://buy.stripe.com/test_5kQ3cv8e8g8DgDsdKl5kk03" class="primary-btn">Buy Now</a>
+                <a href="https://buy.stripe.com/test_5kQ3cv8e8g8DgDsdKl5kk03" class="primary-btn" style="background: #e69c24; border: none; box-shadow: 0 10px 20px rgba(230,156,36,0.2);">
+                    <i class="fa-solid fa-cart-shopping"></i> Buy Now
+                </a>
             </div>
             
             <div class="product-features">
@@ -72,7 +90,6 @@
                 <p><i class="fa-solid fa-mountain"></i> Imported from Yemen</p>
             </div>
         </div>
-    </div>
 </section>
 
 <!-- ================= FOOTER ================= -->
