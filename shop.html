@@ -48,6 +48,42 @@
     <h1>Our Collection</h1>
 </section>
 
+<!-- ================= 8 OZ JAR SALE BANNER ================= -->
+<section class="sale-banner-section" id="sale" style="padding-top: 20px; padding-bottom: 40px;">
+    <div class="sale-banner fade-up-element">
+        
+        <!-- Left Side: Product Image -->
+        <div class="sb-image">
+            <a href="8ozjar.html" class="sb-image-link">
+                <img src="images/8ozhoney.png" alt="8 oz Premium Jar">
+                <div class="sb-image-overlay">
+                    <div class="overlay-badge">
+                        <span>View Product page</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <!-- Middle Side: Header & Details -->
+        <div class="sb-content">
+            <h2>Special Offer!</h2>
+            <p>Ideal for trying our honey or enjoying it in smaller portions. Get our premium 8 oz jar of 100% pure Yemeni honey for only <strong>$35</strong> (originally <span style="text-decoration: line-through; opacity: 0.8;">$50</span>). Grab this exclusive deal before it's gone!</p>
+        </div>
+        
+        <!-- Right Side: Action Buttons -->
+        <div class="sb-right">
+            <a href="https://buy.stripe.com/test_5kQ3cv8e8g8DgDsdKl5kk03" class="sb-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Buy Now - $35
+            </a>
+            <a href="8ozjar.html" class="sb-btn">
+                <i class="fa-solid fa-circle-info"></i> View Details
+            </a>
+        </div>
+        
+    </div>
+</section>
+
 <!-- ================= ALL PRODUCTS ================= -->
 <section class="featured-products">
     <!-- Added fade-up-element for animation -->
@@ -99,12 +135,19 @@
         </div>
         
         <div class="product-card">
-            <div class="product-image">
+            <!-- Added position relative for the absolute badge -->
+            <div class="product-image" style="position: relative;">
+                <div style="position: absolute; top: 15px; right: 15px; background: #e69c24; color: white; padding: 5px 12px; border-radius: 20px; font-weight: 600; font-size: 0.85rem; z-index: 2; box-shadow: 0 4px 10px rgba(230,156,36,0.3);">
+                    SALE
+                </div>
                 <img src="images/8ozhoney.png" alt="8 oz jar">
             </div>
             <div class="product-info">
                 <h3>8 oz Jar</h3>
-                <p class="price">$35</p>
+                <p class="price" style="display: flex; align-items: center; gap: 10px;">
+                    <span style="text-decoration: line-through; color: #888; font-size: 1.1rem; font-weight: 400;">$50</span> 
+                    $35
+                </p>
                 <p class="product-description">Ideal for trying our honey or enjoying it in smaller portions.</p>
                 <div class="product-buttons">
                     <a href="8ozjar.html" class="view-btn">View Details</a>
