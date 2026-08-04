@@ -119,3 +119,23 @@ legalPopups.forEach(popup => {
     });
 });
 
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const mobileImage = document.querySelector('.sb-image img');
+        
+        // Only trigger on screens tablet-sized or smaller
+        if (window.innerWidth <= 1024 && mobileImage) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Add the class to make it pop bigger when it scrolls into view
+                        mobileImage.classList.add('mobile-pop-active');
+                    }
+                });
+            }, { threshold: 0.5 }); // Triggers when 50% of the image is on screen
+            
+            observer.observe(mobileImage);
+        }
+    });
+
+
