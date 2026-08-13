@@ -120,6 +120,23 @@ legalPopups.forEach(popup => {
 });
 
 
+/* Scroll Reveal — fades/rises elements in the first time they enter view.
+   Used by the Heritage journey steps and the Reviews cards. */
+const revealEls = document.querySelectorAll(".reveal");
+
+if (revealEls.length) {
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
+
+    revealEls.forEach(el => revealObserver.observe(el));
+}
+
     document.addEventListener("DOMContentLoaded", function() {
         const mobileImage = document.querySelector('.sb-image img');
         
@@ -137,5 +154,3 @@ legalPopups.forEach(popup => {
             observer.observe(mobileImage);
         }
     });
-
-
